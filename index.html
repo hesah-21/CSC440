@@ -1,14 +1,15 @@
-<html><head>
+<html>
+	<head>
 	<!-- The title shows up in the browser toolbar -->
-	<title>Dog's Homepage</title>
+	<title>My Homepage</title>
 </head>
 
 <body>
 	<!--A header for the page-->
-	<h1>Dog D. Dog</h1>
+	<h1>Hesah Fahad</h1>
 
 	<!--My photo-->
-	<img id="photo" src="http://i.imgur.com/L34Fib6.jpg">
+	<img src="https://cdn2.iconfinder.com/data/icons/royal-crowns/512/royal-alphabet-crown-letter-english-h-512.png ">
 
 	<!--Divs and spans can be used to logically and structurally organize your page
 		Here we use divs to separate different sections of the page: about, courses, interests and pet information
@@ -26,16 +27,16 @@
 		<h2>About</h2>
 
 		<!--<p> tags are paragraphs have newlines before and after them-->
-		<p>Woof woof!</p>
+		<p>My name is Hesah</p>
 		<!--The <a> tag is a link.
 			The text between the <a> and </a> tags is the displayed text.
 			The href attribute has the link's target URL.-->
-		<p>Hi, I'm Dog. I love <a href="http://en.wikipedia.org/wiki/User_interface_design">User Interface Design</a>.</p>
+		<p>I'm a senior my major is Computer Scince and I love <a href="http://en.wikipedia.org/wiki/User_interface_design">User Interface Design</a>.</p>
 	</div>
 
 	<div class="section" id="courses">
 		<h2>Courses</h2>
-		<p>Here are some courses I've taken:</p>
+		<p>Here are the courses I'm taking this semester:</p>
 
 		<!--Tables can be used to group text or images into rows and columns-->
 		<table>
@@ -44,42 +45,42 @@
 				<!--Each <th> or <td> is a cell.
 					The number of cells in a row determines the number of columns in the table.
 				-->
-				<th>Course Number</th>
-				<th>Course Title</th>
-				<th>Semester Taken</th>
+				<th><h3>Course Number</h3></th>
+				<th><h3>Course Title</h3></th>
+				<th><h3>Semester Taken</h3></th>
 			</tr>
 			<tr>
 				<!--A <td> or cell can span multiple columns using the colspan attribute-->
-				<td class="enrollheader" colspan="3">For Credit</td>
+				<td class="enrollheader" colspan="3">CS Courses</td>
 			</tr>
 			<!--We give certain rows the "currentlytaking" class, so we can color them differently in a CSS rule-->
 			<tr class="currentlytaking">
-				<td><a href="http://stellar.mit.edu/S/course/6/sp14/6.813/index.html">6.813</a></td>
-				<td>User Interface Design</td>
-				<td>Spring 2014</td>
+				<td> CSC440</td>
+				<td>HCI</td>
+				<td>Spring 2020</td>
 			</tr>
 			<tr>
-				<td><a href="http://ai6034.mit.edu/fall12/index.php?title=Main_Page">6.034</a></td>
-				<td>Artificial Intelligence</td>
-				<td>Fall 2013</td>
+				<td>CSC497</td>
+				<td>Graduation Project 2</td>
+				<td>Spring 2020</td>
 			</tr>
 			<tr>
-				<td><a href="http://stellar.mit.edu/S/course/6/fa13/6.006/">6.006</a></td>
-				<td>Introduction to Algorithms</td>
-				<td>Fall 2013</td>
+				<td>CSC478</td>
+				<td>Image Processing </td>
+				<td>Spring 2020</td>
 			</tr>
 			<tr>
-				<td class="enrollheader" colspan="3">Listener</td>
+				<td class="enrollheader" colspan="3">Not CS</td>
 			</tr>
 			<tr>
-				<td><a href="http://stellar.mit.edu/S/course/6/fa13/6.867/">6.867</a></td>
-				<td>Machine Learning</td>
-				<td>Fall 2013</td>
+				<td>IS463</td>
+				<td>Data Mining</td>
+				<td>Spring 2020</td>
 			</tr>
 			<tr>
-				<td><a href="http://db.csail.mit.edu/6.830/index.php">6.830</a></td>
-				<td>Database Systems</td>
-				<td>Fall 2012</td>
+				<td>Qra100</td>
+				<td>Quraan</td>
+				<td>Spring 2020</td>
 			</tr>
 		</tbody></table>
 	</div>
@@ -87,7 +88,7 @@
 	<div class="section" id="interests">
 		<h2>Interests</h2>
 		<!--Spans are displayed inline, but allow you to identify text in CSS rules-->
-		I am interested <span class="serious">HCI</span>, <span class="silly">memes</span>, and <span class="silly">youtube videos</span>.
+		<span class="silly">memes</span>, and <span class="silly">youtube videos</span>.
 	</div>
 
 	<div class="section" id="petinfo">
@@ -128,9 +129,12 @@
 
 		/* h2 descendants of .section class: set a background color for all h2 text in sections */
 		.section h2 {
-			background-color: rgb(255,255,220);
+			background-color: #70C1F9 ;
 			font-family: Georgia;
-			color: maroon;
+			color: #FAF997;
+		}
+		.section h3 {
+			color: #D69BFA;
 		}
 
 		/* #courses id with <a> tag selector:
@@ -150,7 +154,7 @@
 
 		/* span tag selector: color all span tags red */
 		span {
-			color: red;
+			color: #0071C0;
 		}
 
 		/* span with .serious class: set font to Impact */
@@ -168,7 +172,7 @@
 
 		/* Table Style! */
 		/* Put borders around the cells */
-		th, td { border: solid 1px black; }
+		th, td { border: solid 1px #0B1371; }
 		/* Collapse or 'merge' the borders into each other*/
 		table { border-collapse: collapse; }
 
@@ -179,7 +183,7 @@
 
 		/* Color green the text of currentlytaking rows */
 		tr.currentlytaking {
-			color:green;
+			color:black;
 		}
 
 		/* Align and style the "For Credit" and "Listener" cells */
@@ -191,4 +195,5 @@
 
 	</style>
 
-</body></html>
+</body>
+</html>
